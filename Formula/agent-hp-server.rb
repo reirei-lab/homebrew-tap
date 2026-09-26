@@ -4,11 +4,11 @@ class AgentHpServer < Formula
   depends_on :macos
 
   if Hardware::CPU.arm?
-    url "https://github.com/reirei-lab/agent-hp-server/releases/download/v0.1.0/agent-hp-server-macos-arm64-v0.1.0.zip"
-    sha256 "8be27b59eec2e8ab2e692305250c0f70bc5e1fd87006b9db3a1adfcd3954b96d"
+    url "https://github.com/reirei-lab/agent-hp-server/releases/download/v0.2.0/agent-hp-server-macos-arm64-v0.2.0.zip"
+    sha256 "ef85b7da61a2eeefdc98fae0eae02a6da8e632623160e48cea70f8e015390c1a"
   else
-    url "https://github.com/reirei-lab/agent-hp-server/releases/download/v0.1.0/agent-hp-server-macos-x64-v0.1.0.zip"
-    sha256 "2045ec75147fbf278c136bfc87a0e1f34415fdedca05342f6191e3680f2b8538"
+    url "https://github.com/reirei-lab/agent-hp-server/releases/download/v0.2.0/agent-hp-server-macos-x64-v0.2.0.zip"
+    sha256 "72ec0bc4d29345e92b558afa6a21c8046225e20ea289fc26498f9eb14195bd79"
   end
 
   def install
