@@ -15,6 +15,14 @@ class AgentHpServer < Formula
     bin.install Dir["agent-hp-server-macos-*"].fetch(0) => "agent-hp-server"
   end
 
+  service do
+    run opt_bin/"agent-hp-server"
+    keep_alive true
+    environment_variables PATH: std_service_path_env
+    log_path var/"log/agent-hp-server.log"
+    error_log_path var/"log/agent-hp-server-error.log"
+  end
+
   test do
     assert_predicate bin/"agent-hp-server", :executable?
   end
