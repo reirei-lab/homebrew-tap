@@ -1,9 +1,9 @@
 class BukasServiceEdge < Formula
   desc "Bukas agent service (edge channel)"
   homepage "https://github.com/reirei-lab/bukas-releases"
-  url "https://github.com/reirei-lab/bukas-releases/releases/download/edge-20261018.225001.15-15776002a785/bukas-service-edge-20261018.225001.15-15776002a785-macos-arm64.zip"
-  version "20261018.225001.15"
-  sha256 "c372cdfe1cca81adb2291ce0c0576205ed2a45da1c56eb89d3151a17fa4b4e79"
+  url "https://github.com/reirei-lab/bukas-releases/releases/download/edge-20261018.231243.16-de14b429c761/bukas-service-edge-20261018.231243.16-de14b429c761-macos-arm64.zip"
+  version "20261018.231243.16"
+  sha256 "7000d3758b413d5aec0a2b00501fb6dac12bfb7cc907bb76875d1db18feb66be"
 
   depends_on arch: :arm64
   depends_on macos: :tahoe
@@ -34,6 +34,6 @@ class BukasServiceEdge < Formula
   end
 
   test do
-    assert_match "20261018.225001.15", shell_output("#{bin}/bukas-service --version")
+    assert_match "20261018.231243.16", shell_output("#{bin}/bukas-service --version")
   end
 end
